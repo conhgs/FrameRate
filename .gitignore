@@ -1,0 +1,15 @@
+# Ignore environments and cache
+.venv/
+__pycache__/
+*.pyc
+*.swp
+
+# Ignore data and model artifacts
+data/
+models/
+!models/index.faiss  # Keep the model artifact, but ignore local run logs
+!models/svd_model.pkl
+
+# Ignore logs and documentation
+*.log
+.DS_Store
